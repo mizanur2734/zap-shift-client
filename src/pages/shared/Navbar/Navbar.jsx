@@ -4,12 +4,12 @@ import ProFastLogo from "../ProfastLogo/ProFastLogo";
 
 const Navbar = () => {
     const navItems = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About Us</NavLink></li>
-       
+        <li><NavLink to="/" className='text-[#606060]'>Home</NavLink></li>
+        <li><NavLink to="/about" className='text-[#606060]'>About Us</NavLink></li>
     </>
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+  <div className="py-4">
+      <div className="navbar bg-[#FFFFFF] shadow-sm rounded-md ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,6 +49,7 @@ const Navbar = () => {
         <a className="btn">Button</a>
       </div>
     </div>
+  </div>
   );
 };
 
