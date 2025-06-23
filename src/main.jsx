@@ -12,7 +12,7 @@ Aos.init;
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <div className="bg-[#EAECED]">
-      <div className="font-urbanists max-w-11/12 mx-auto">
+      <div className="max-w-11/12 mx-auto">
         <RouterProvider router={router} />
       </div>
     </div>

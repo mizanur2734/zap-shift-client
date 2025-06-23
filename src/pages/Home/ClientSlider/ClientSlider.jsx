@@ -12,7 +12,7 @@ const clientLogos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 const ClientSlider = () => {
   return (
     <section className="py-10 mx-16">
-      <h2 className="text-center text-2xl font-semibold mb-6 text-gray-800">
+      <h2 className="text-center text-3xl font-semibold mb-10 text-gray-800">
         We've helped thousands of sales teams
       </h2>
       <Marquee speed={50} gradient={false} direction="left" pauseOnHover={true}>

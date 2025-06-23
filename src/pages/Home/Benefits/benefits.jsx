@@ -1,7 +1,7 @@
 import React from "react";
 import tracking from "../../../assets/benefits/tracking.png"
 import call from "../../../assets/benefits/call.png"
-import support from "../../../assets/benefits/support.png"
+import support from "../../../assets/benefits/call - Copy.png"
 const benefits = [
   {
     id: "benefit_1",
