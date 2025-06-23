@@ -37,7 +37,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="text-xl">
-            <ProFastLogo></ProFastLogo>
+            <ProFastLogo className="text-black"></ProFastLogo>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -46,7 +46,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn bg-[#CAEB66] border-none px-6 py-3 text-black rounded-md">Button</a>
       </div>
     </div>
   </div>
