@@ -1,11 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { router } from './router/router.jsx'
-import { RouterProvider } from 'react-router'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { router } from "./router/router.jsx";
+import { RouterProvider } from "react-router";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-   <RouterProvider router={router} />
-  </StrictMode>,
-)
+    <div className="font-urbanists max-w-11/12 mx-auto">
+      <RouterProvider router={router} />
+    </div>
+  </StrictMode>
+);
