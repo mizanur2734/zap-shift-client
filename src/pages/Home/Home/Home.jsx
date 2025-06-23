@@ -5,6 +5,7 @@ import ClientSlider from '../ClientSlider/ClientSlider';
 import Benefits from '../Benefits/benefits';
 import BeMerChant from '../BeMerChant/BeMerChant';
 import BookingCard from '../BookingCard/BookingCard';
+import Faq from '../Faq/Faq';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <ClientSlider></ClientSlider>
             <Benefits></Benefits>
             <BeMerChant></BeMerChant>
+            <Faq></Faq>
         </div>
     );
 };

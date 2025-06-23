@@ -6,12 +6,19 @@ const Footer = () => {
     <footer className="footer footer-horizontal footer-center bg-neutral text-neutral-content p-10 rounded-4xl">
       <aside>
        <ProFastLogo></ProFastLogo>
-        <p className="font-bold">
-          ACME Industries Ltd.
-          <br />
-          Providing reliable tech since 1992
+        <p className="font-bold w-3/5 mt-2 ">
+          Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to business shipments — we deliver on time, every time.
         </p>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+        <div>
+            <ul className="flex gap-4 mt-4">
+                <li>Services</li>
+                <li>Coverage</li>
+                <li>About Us</li>
+                <li>Pricing</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">
