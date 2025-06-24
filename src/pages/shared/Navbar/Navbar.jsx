@@ -37,9 +37,9 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
-        <a className="text-xl">
+        <div className="text-xl">
             <ProFastLogo className="text-black"></ProFastLogo>
-        </a>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
