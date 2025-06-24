@@ -5,6 +5,7 @@ import ProFastLogo from "../ProfastLogo/ProFastLogo";
 const Navbar = () => {
     const navItems = <>
         <li><NavLink to="/" className='text-[#606060]'>Home</NavLink></li>
+        <li><NavLink to="/coverage" className='text-[#606060]'>Coverage</NavLink></li>
         <li><NavLink to="/about" className='text-[#606060]'>About Us</NavLink></li>
     </>
   return (
