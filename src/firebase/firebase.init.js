@@ -14,6 +14,8 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_appId,
 };
 
+// hsifwbb ushf
+
 // Initialize firebase
 const app = initializeApp(firebaseConfig);
 
