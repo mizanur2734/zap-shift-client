@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router";
 import ProFastLogo from "../pages/shared/ProfastLogo/ProFastLogo";
+import { FaHome, FaBox, FaHistory, FaUserEdit } from "react-icons/fa";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const DashboardLayout = () => {
   return (
@@ -8,7 +10,7 @@ const DashboardLayout = () => {
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
-        {/*  */}
+          {/*  */}
           <div className="navbar bg-base-300 w-full">
             <div className="flex-none lg:hidden">
               <label
@@ -32,7 +34,6 @@ const DashboardLayout = () => {
               </label>
             </div>
             <div className="mx-2 flex-1 px-2 lg:hidden">Dashboard</div>
-            
           </div>
           {/* Page content here */}
           <Outlet></Outlet>
@@ -48,10 +49,41 @@ const DashboardLayout = () => {
             {/* Sidebar content here */}
             <ProFastLogo></ProFastLogo>
             <li>
-              <a>Home </a>
+              <NavLink to="/" className="flex items-center gap-2">
+                <FaHome /> Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/dashboard/myParcels">My Parcels</NavLink>
+              <NavLink
+                to="/dashboard/myParcels"
+                className="flex items-center gap-2"
+              >
+                <FaBox /> My Parcels
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dashboard/paymentHistory"
+                className="flex items-center gap-2"
+              >
+                <FaHistory /> Payment History
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dashboard/track"
+                className="flex items-center gap-2"
+              >
+                <HiOutlineLocationMarker /> Track a Package
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dashboard/profile"
+                className="flex items-center gap-2"
+              >
+                <FaUserEdit /> Update Profile
+              </NavLink>
             </li>
           </ul>
         </div>

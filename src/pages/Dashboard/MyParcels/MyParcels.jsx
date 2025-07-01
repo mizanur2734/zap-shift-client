@@ -91,7 +91,7 @@ const MyParcels = () => {
                   <td className="capitalize">
                     {parcel.type === "document" ? "Document" : "Non-document"}
                   </td>
-                  <td>{(new Date(parcel.creation_date), "PPPp")}</td>
+                 <td>{new Date(parcel.creation_date).toLocaleString()}</td>
                   <td>৳{parcel.cost}</td>
                   <td>
                     <span
