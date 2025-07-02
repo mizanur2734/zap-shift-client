@@ -3,7 +3,7 @@ import useAuth from '../../../hooks/useAuth';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import { useQuery } from '@tanstack/react-query';
 
-const formateDate = (iso) => new Date(iso).toLocaleString()
+// const formateDate = (iso) => new Date(iso).toLocaleString()
 
 const PaymentHistory = () => {
     const {user} = useAuth()

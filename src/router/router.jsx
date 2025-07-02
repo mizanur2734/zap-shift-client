@@ -9,12 +9,15 @@ import Register from "../pages/Authention/Register/Register";
 import Coverage from "../pages/Coverage/Coverage";
 import PrivateRoutes from "../routes/PrivateRoutes";
 import SendParcel from "../pages/SendParcel/SendParcel";
-import DashboardLayout from "../layouts/dashboardLayout";
+import DashboardLayout from "../layouts/DashboardLayout";
 import MyParcels from "../pages/Dashboard/MyParcels/MyParcels";
 import Payment from "../pages/Dashboard/Payment/Payment";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
 import TrackParcel from "../pages/Dashboard/TrackParcel/TrackParcel";
 import BeARider from "../pages/Dashboard/BeARider/BeARider";
+import PendingRiders from "../pages/Dashboard/PendingRiders/PendingRiders";
+import ActiveRiders from "../pages/Dashboard/ActiveRiders/ActiveRiders";
+
 
 export const router = createBrowserRouter([
   {
@@ -32,7 +35,8 @@ export const router = createBrowserRouter([
         },
         {
           path: "beARider",
-          element: <PrivateRoutes><BeARider></BeARider></PrivateRoutes>
+          element: <PrivateRoutes><BeARider></BeARider></PrivateRoutes>,
+          loader: () => fetch ('./servicesCenter.json')
         },
         {
           path: "sendParcel",
@@ -74,6 +78,14 @@ export const router = createBrowserRouter([
       {
         path: "track",
         Component: TrackParcel
+      },
+      {
+        path:"pending-riders",
+        Component: PendingRiders
+      },
+      {
+        path: 'active-riders',
+        Component: ActiveRiders
       }
     ]
   }

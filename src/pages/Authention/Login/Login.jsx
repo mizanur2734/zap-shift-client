@@ -9,13 +9,14 @@ const Login = () => {
     const {signIn} = useAuth()
     const location = useLocation()
     const navigate = useNavigate()
-    const form = location.state?.form || "/"
+    const from = location.state?.from || "/"
+    console.log(location)
 
     const onSubmit = data =>{
         signIn(data.email, data.password)
         .then(result => {
           console.log(result.user)
-          navigate(form)
+          navigate(from)
         })
         .catch(error => console.log(error))
     }
@@ -43,7 +44,7 @@ const Login = () => {
           </div>
           <button className="btn bg-[#CAEB66] text-black mt-4">Login</button>
         </fieldset>
-         <p><small>New this to website?<Link className="btn btn-link" to="/register">Register</Link></small></p>
+         <p><small>New this to website?<Link state={{from}}  className="btn btn-link" to="/register">Register</Link></small></p>
       </form>
       <SocialLogin></SocialLogin>
     </div>
